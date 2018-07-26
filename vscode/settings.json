@@ -1,0 +1,51 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "workbench.statusBar.visible": true,
+    "python.linting.enabled": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true
+    },
+    "[python]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+    // Editor
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.detectIndentation": true,
+    "editor.roundedSelection": false,
+    "editor.renderIndentGuides": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.renderLineHighlight": "all",
+    // Explorer
+    "explorer.openEditors.visible": 0,
+    // Window - prevent blurry text on secondary monitor
+    "window.zoomLevel": 0,
+    // Trailing spaces
+    "trailing-spaces.trimOnSave": true,
+    "trailing-spaces.syntaxIgnore": [
+        "markdown"
+    ],
+    // workbench
+    "workbench.editor.enablePreview": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "workbench.colorTheme": "Spacemacs - dark",
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "materialTheme.fixIconsRunning": false,
+
+    // sonarqube
+    "sonarlint.ls.javaHome": "/usr/lib/jvm/java-1.8.0-openjdk-amd64",
+    "shellcheck.disableVersionCheck": true
+}
