@@ -3,5 +3,13 @@
     {
         "key": "ctrl+-",
         "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "python.refactorExtractVariable"
+    },
+    {
+        "key": "ctrl+alt+m",
+        "command": "python.refactorExtractMethod"
     }
 ]
