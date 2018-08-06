@@ -41,7 +41,7 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.historyExplorer.enabled": true,
-    "workbench.colorTheme": "Spacemacs - dark",
+    "workbench.colorTheme": "Magoon",
     "workbench.iconTheme": "eq-material-theme-icons-light",
     "materialTheme.fixIconsRunning": false,
 
