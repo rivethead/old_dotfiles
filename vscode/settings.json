@@ -41,11 +41,11 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.historyExplorer.enabled": true,
-    "workbench.colorTheme": "Magoon",
     "workbench.iconTheme": "eq-material-theme-icons-light",
     "materialTheme.fixIconsRunning": false,
 
     // sonarqube
     "sonarlint.ls.javaHome": "/usr/lib/jvm/java-1.8.0-openjdk-amd64",
-    "shellcheck.disableVersionCheck": true
+    "shellcheck.disableVersionCheck": true,
+    "workbench.colorTheme": "Spacemacs - light"
 }
