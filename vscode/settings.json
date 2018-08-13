@@ -47,5 +47,5 @@
     // sonarqube
     "sonarlint.ls.javaHome": "/usr/lib/jvm/java-1.8.0-openjdk-amd64",
     "shellcheck.disableVersionCheck": true,
-    "workbench.colorTheme": "Spacemacs - light"
+    "workbench.colorTheme": "Hop Light"
 }
