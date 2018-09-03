@@ -52,5 +52,6 @@
     "workbench.editor.showTabs": false,
 
     "breadcrumbs.filePath": "off",
-    "breadcrumbs.symbolPath": "on"
+    "breadcrumbs.symbolPath": "on",
+    "workbench.startupEditor": "newUntitledFile"
 }
