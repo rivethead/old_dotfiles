@@ -1,5 +1,6 @@
 alias ls='ls -G'
 alias ll='ls -lG'
+alias ping='prettyping'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
 
