@@ -1,6 +1,8 @@
 alias ls='ls -G'
 alias ll='ls -lG'
 alias ping='prettyping'
+alias cat='bat'
+alias start-minikube='minikube start --cpus 4 --memory 8192 --vm-driver kvm2'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
 
