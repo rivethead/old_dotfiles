@@ -47,11 +47,12 @@
     // sonarqube
     "sonarlint.ls.javaHome": "/usr/lib/jvm/java-1.8.0-openjdk-amd64",
     "shellcheck.disableVersionCheck": true,
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Hop Light",
     "vsicons.projectDetection.autoReload": true,
     "workbench.editor.showTabs": false,
 
     "breadcrumbs.filePath": "off",
     "breadcrumbs.symbolPath": "on",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "vsicons.dontShowNewVersionMessage": true
 }
