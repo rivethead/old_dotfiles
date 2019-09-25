@@ -1,5 +1,6 @@
 alias gadd='git add -A'
 alias gs='git status'
+alias gcb='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 alias gl="git log --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias glog="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
@@ -40,4 +41,4 @@ function push_to_feature_branch() {
 alias gcfb="gcdb master; gprep; gmkb"
 alias gpfb=" gadd; git commit; gprep; gcdb ${CB}; git push"
 alias test="push_to_feature_branch"
-
+alias gsq="git reset $(git merge-base master $(git rev-parse --abbrev-ref HEAD))"

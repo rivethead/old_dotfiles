@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt update
+apt update -y
 apt dist-upgrade
 apt upgrade -y
 apt autoremove

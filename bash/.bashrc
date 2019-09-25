@@ -1,16 +1,15 @@
 alias ls='ls -G'
 alias ll='ls -lG'
-alias ping='prettyping'
+# alias ping='prettyping'
 alias cat='bat'
 alias start-minikube='minikube start --cpus 4 --memory 8192 --vm-driver kvm2'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
-export GREP_OPTIONS="--color"
-
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+unset GREP_OPTIONS
 
 function _update_ps1() {
     PS1=$(powerline-shell $?)
@@ -27,10 +26,25 @@ source ~/.bash_aliases
 source ~/git-completion.bash
 source /usr/local/bin/virtualenvwrapper.sh
 
-tmux attach &> /dev/null
 
-if [[ ! $TERM =~ screen ]]; then
-    exec tmux
-fi
+# tmux attach &> /dev/null
+
+# if [[ ! $TERM =~ screen ]]; then
+#    exec tmux
+# fi
 
 
+
+
+#kubectx and kubens
+export PATH=~/.kubectx:$PATH
+
+PATH="/home/pieter/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/pieter/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/pieter/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/pieter/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/pieter/perl5"; export PERL_MM_OPT;
+
+source $HOME/.asdf/asdf.sh
+
+source $HOME/.asdf/completions/asdf.bash
