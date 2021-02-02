@@ -5,7 +5,7 @@ alias gcb='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch 
 alias gl="git log --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias glog="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 
-alias gmkb='git checkout -b'
+alias gmkb='git checkout --track origin/master -b'
 alias gcdb='git checkout'
 alias gc='git clean -d -f'
 alias ls='ls -laF '
@@ -17,7 +17,7 @@ alias ...='cd ../../..'
 alias ll='ls -lha'
 
 alias gprep='git fetch --all; git rebase origin/master'
-alias gpush='git push origin master'
+alias gpush='dotnet build && dotnet test --filter speed!=slow && git push origin'
 
 alias xclip="xclip -selection c"
 

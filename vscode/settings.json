@@ -1,8 +1,4 @@
 {
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "workbench.statusBar.visible": true,
     "python.linting.enabled": true,
     "files.exclude": {
         "**/.git": true,
@@ -18,15 +14,10 @@
         ]
     },
     // Editor
-    "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.detectIndentation": true,
     "editor.roundedSelection": false,
-    "editor.renderIndentGuides": false,
     "editor.formatOnPaste": true,
-    "editor.renderLineHighlight": "all",
-    // Explorer
-    "explorer.openEditors.visible": 0,
     // Window - prevent blurry text on secondary monitor
     "window.zoomLevel": 0,
     // Trailing spaces
@@ -36,22 +27,14 @@
     ],
     // workbench
     "workbench.editor.enablePreview": false,
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.historyExplorer.enabled": true,
-    "workbench.iconTheme": "city-lights-icons-vsc",
-    "materialTheme.fixIconsRunning": false,
 
     // sonarqube
     "sonarlint.ls.javaHome": "/usr/lib/jvm/java-1.8.0-openjdk-amd64",
     "shellcheck.disableVersionCheck": true,
-    "workbench.colorTheme": "GitHub Plus Elixir Adapted",
-    "workbench.editor.showTabs": true,
+    "workbench.colorTheme": "GitHub Plus",
 
     "breadcrumbs.filePath": "off",
     "breadcrumbs.symbolPath": "on",
-    "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
     "window.titleBarStyle": "native",
     "editor.cursorSmoothCaretAnimation": true,
@@ -135,18 +118,74 @@
             }
         ]
     },
-    "journal.base": "/home/pieter/Dropbox/journal",
-    "journal.locale": "en-GB",
-    "journal.tpl-entry": "# ${weekday}, ${localDate}## Learnt## Meetings## Tasks",
     "python.jediEnabled": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "extensions.ignoreRecommendations": false,
+    "extensions.ignoreRecommendations": true,
     "files.watcherExclude": {
         "**/target/**": true
     },
-    "java.configuration.checkProjectSettingsExclusions": false,
     "explorer.confirmDelete": false,
     "eslint.run": "onSave",
-    "window.restoreWindows": "none"
+    "window.restoreWindows": "none",
+    "vsicons.dontShowNewVersionMessage": true,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // remove noise
+    "workbench.editor.showTabs": false,
+    "editor.minimap.enabled": false,
+    "editor.codeLens": false,
+    "workbench.activityBar.visible": false,
+
+    "workbench.startupEditor": "none",
+    "editor.renderControlCharacters": false,
+    "editor.renderIndentGuides": false,
+    "editor.renderLineHighlight": "none",
+    "editor.lineNumbers": "on",
+
+    "vscode_custom_css.imports": [
+        "file:///Users/pieter/.vscode/hide-title-bar.css"
+    ],
+    "vscode_custom_css.policy": true,
+    "window.title": "${activeEditorMedium}${separator}${rootName} ${dirty}",
+    "explorer.openEditors.visible": 0,
+    "workbench.sideBar.location": "right",
+    "editor.renderWhitespace": "all",
+    "editor.fontSize": 18,
+    "editor.lineHeight": 35,
+    "editor.letterSpacing": 0,
+    "editor.fontFamily": "Fira Code",
+    "editor.suggestFontSize": 18,
+    "editor.suggestLineHeight": 35,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.lineHeight": 1.5,
+    "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.cursorStyle": "line",
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "phase",
+    "workbench.statusBar.visible": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "python.languageServer": "Pylance",
+    "workbench.tree.indent": 15,
+    "editor.maxTokenizationLineLength": 2000000,
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6MTE2OSxcImhlaWdodFwiOjgyN30sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+    "hediet.vscode-drawio.codeLinkActivated": false,
+    "editor.columnSelection": false,
+    "python.pythonPath": "/home/pieter/projects/stuff/kaggle/k/bin/python3.7",
+    "yaml.schemas": {
+        "file:///home/pieter/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "FSharp.useSdkScripts": true,
+    "python.formatting.provider": "black",
 }

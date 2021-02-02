@@ -1,11 +1,7 @@
 alias ls='ls -G'
 alias ll='ls -lG'
-# alias ping='prettyping'
 alias cat='bat'
-alias start-minikube='minikube start --cpus 4 --memory 8192 --vm-driver kvm2'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -24,16 +20,6 @@ export HISTCONTROL=ignoreboth:erasedups
 
 source ~/.bash_aliases
 source ~/git-completion.bash
-source /usr/local/bin/virtualenvwrapper.sh
-
-
-# tmux attach &> /dev/null
-
-# if [[ ! $TERM =~ screen ]]; then
-#    exec tmux
-# fi
-
-
 
 
 #kubectx and kubens
@@ -48,3 +34,4 @@ PERL_MM_OPT="INSTALL_BASE=/home/pieter/perl5"; export PERL_MM_OPT;
 source $HOME/.asdf/asdf.sh
 
 source $HOME/.asdf/completions/asdf.bash
+export GOPATH="$HOME/workspace"
