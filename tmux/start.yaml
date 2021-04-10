@@ -1,0 +1,20 @@
+session_name: work
+windows:
+- window_name: admin
+  focus: True
+  layout: main-horizontal
+  panes:
+  - shell_command:
+      - cd ~/
+      - sudo ~/projects/dotfiles/refresh-os.sh
+  - shell_command:
+      - cd ~/projects/personal/scripts/ && clear && globalprotect connect
+  - shell_command: cd /tmp && clear
+- window_name: applications
+  layout: main-horizontal
+  panes:
+  - shell_command: cd ~/projects/homestead/applications-team
+- window_name: backbone
+  layout: main-horizontal
+  panes:
+  - shell_command: cd ~/projects/homestead/backbone
